@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3498db"
+    tools:context="raunak.com.jodhpurquiz.Quiz_layout">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/ques"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rect_border"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:paddingTop="11dp"
+        android:text=""
+
+        />
+
+       <Button
+           android:id="@+id/opt1"
+           android:layout_width="340dp"
+           android:layout_height="47dp"
+           android:layout_below="@+id/ques"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="71dp"
+           android:background="@drawable/rect_border"
+           android:onClick="Check"
+           android:paddingEnd="21dp"
+           android:paddingStart="21dp"
+           android:text=""
+           android:textAlignment="textStart"
+           android:textSize="16sp" />
+
+       <Button
+           android:id="@+id/opt2"
+           android:layout_width="340dp"
+           android:layout_height="47dp"
+           android:layout_below="@+id/opt1"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="11dp"
+           android:background="@drawable/rect_border"
+           android:onClick="Check"
+           android:paddingEnd="21dp"
+           android:paddingStart="21dp"
+           android:text=""
+           android:textAlignment="textStart"
+           android:textSize="16sp" />
+
+       <Button
+           android:id="@+id/opt3"
+           android:layout_width="340dp"
+           android:layout_height="47dp"
+           android:layout_below="@+id/opt2"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="11dp"
+           android:background="@drawable/rect_border"
+           android:onClick="Check"
+           android:paddingEnd="21dp"
+           android:paddingStart="21dp"
+           android:text=""
+           android:textAlignment="textStart"
+           android:textSize="16sp" />
+
+       <Button
+           android:id="@+id/opt4"
+           android:layout_width="340dp"
+           android:layout_height="47dp"
+           android:layout_below="@+id/opt3"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="11dp"
+           android:background="@drawable/rect_border"
+           android:onClick="Check"
+           android:paddingEnd="21dp"
+           android:paddingStart="21dp"
+           android:text=""
+           android:textAlignment="textStart"
+           android:textSize="16sp" />
+
+   </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/unfocus_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#2c3e50"
+        android:visibility="invisible">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/score_layout"
+        android:layout_width="260dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#2c3e50"
+        android:visibility="invisible">
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="70dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginLeft="74dp"
+            android:text="Score:"
+            android:textColor="#ecf0f1"
+            android:textSize="21sp"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="70dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginLeft="144dp"
+            android:text=""
+            android:textColor="#ecf0f1"
+            android:textSize="21sp"/>
+
+        <Button
+            android:id="@+id/play_again"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="21dp"
+            android:text="Play Again"/>
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="133dp"
+            android:text="Quit"/>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
+
+
