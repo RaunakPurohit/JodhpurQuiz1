@@ -42,6 +42,8 @@ ArrayList<Suitcase> arr= new ArrayList<>();
         playagain = (Button)findViewById(R.id.play_again);
         quit = (Button)findViewById(R.id.quit);
 
+        //checking...
+
         ////////////////////Database Connectivity/////////////
         obj= DBAdapter.getDBAdapter(getApplicationContext());
 
